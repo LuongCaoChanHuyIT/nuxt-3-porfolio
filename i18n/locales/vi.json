@@ -54,6 +54,53 @@
     },
     "loading": {
       "message": "Đang tải dự án..."
+    },
+    "list": {
+      "1": {
+        "title": "Nền tảng Thương mại điện tử",
+        "description": "Một giải pháp thương mại điện tử toàn diện xây dựng với các công nghệ web hiện đại. Bao gồm các tính năng như xác thực người dùng, xử lý thanh toán, quản lý kho, và thiết kế đáp ứng để tối ưu trải nghiệm người dùng trên mọi thiết bị.",
+        "image": "https://img.freepik.com/free-photo/vertical-banners-sales-promo_23-2150653391.jpg?ga=GA1.1.2043908255.1756389541&semt=ais_hybrid&w=740&q=80",
+        "technologies": ["Vue.js", "Node.js", "MongoDB", "Stripe"],
+        "links": [
+          {
+            "type": "demo",
+            "label": "Xem Demo",
+            "url": "https://example.com"
+          },
+          {
+            "type": "github",
+            "label": "GitHub",
+            "url": "https://github.com/example"
+          }
+        ]
+      },
+      "2": {
+        "title": "Ứng dụng Quản lý Công việc",
+        "description": "Một ứng dụng quản lý công việc hợp tác giúp các nhóm tổ chức dự án, phân công nhiệm vụ và theo dõi tiến độ. Xây dựng với cập nhật thời gian thực và tính năng kéo thả trực quan.",
+        "image": "https://img.freepik.com/free-photo/online-shopping-concept_23-2151896814.jpg?ga=GA1.1.2043908255.1756389541&semt=ais_hybrid&w=740&q=80",
+        "technologies": ["React", "Firebase", "Material-UI"],
+        "links": [
+          { "type": "demo", "label": "Thử Ngay", "url": "https://example.com" }
+        ]
+      },
+      "3": {
+        "title": "Bảng điều khiển Thời tiết",
+        "description": "Một bảng điều khiển thời tiết tương tác cung cấp thông tin thời tiết theo thời gian thực, dự báo và trực quan hóa dữ liệu lịch sử. Có các dịch vụ dựa trên vị trí và các widget tùy chỉnh.",
+        "image": "https://img.freepik.com/free-vector/infographic_53876-25853.jpg?ga=GA1.1.2043908255.1756389541&semt=ais_hybrid&w=740&q=80",
+        "technologies": ["JavaScript", "Chart.js", "OpenWeather API"],
+        "links": [
+          {
+            "type": "demo",
+            "label": "Xem Demo",
+            "url": "https://example.com"
+          },
+          {
+            "type": "github",
+            "label": "Mã Nguồn",
+            "url": "https://github.com/example"
+          }
+        ]
+      }
     }
   },
   "resume": {

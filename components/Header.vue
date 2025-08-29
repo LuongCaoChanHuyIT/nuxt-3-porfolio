@@ -373,9 +373,7 @@
 
 <script setup lang="ts">
 import { useThemeStore } from "@/stores/theme";
-import { useI18n } from "vue-i18n";
 import profileImg from "~/public/images/profile.png";
 
-const { t } = useI18n();
 const theme = useThemeStore();
 </script>

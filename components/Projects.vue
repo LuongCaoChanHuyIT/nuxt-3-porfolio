@@ -6,7 +6,7 @@
         <div class="text-center mb-5">
           <h1 class="display-5 fw-bolder mb-0">
             <span class="text-gradient d-inline">
-              {{ t("project.title") }}
+              {{ $t("project.title") }}
             </span>
           </h1>
         </div>
@@ -27,10 +27,10 @@
             >
               <div class="empty-state">
                 <h3 class="text-muted mb-3">
-                  {{ t("project.empty.heading") }}
+                  {{ $t("project.empty.heading") }}
                 </h3>
                 <p class="text-muted">
-                  {{ t("project.empty.description") }}
+                  {{ $t("project.empty.description") }}
                 </p>
               </div>
             </div>
@@ -41,7 +41,7 @@
                 <span class="visually-hidden">Loading...</span>
               </div>
               <p class="mt-3 text-muted">
-                {{ t("project.loading.message") }}
+                {{ $t("project.loading.message") }}
               </p>
             </div>
           </div>
@@ -77,55 +77,55 @@ const { t } = useI18n();
 const sampleProjects: Project[] = [
   {
     id: 1,
-    title: t("project.list.1.title"),
-    description: t("project.list.1.description"),
+    title: $t("project.list.1.title"),
+    description: $t("project.list.1.description"),
     image:
       "https://img.freepik.com/free-photo/vertical-banners-sales-promo_23-2150653391.jpg?ga=GA1.1.2043908255.1756389541&semt=ais_hybrid&w=740&q=80",
     technologies: ["Vue.js", "Node.js", "MongoDB", "Stripe"],
     links: [
       {
         type: "demo",
-        label: t("project.list.1.links.0.label"),
+        label: $t("project.list.1.links.0.label"),
         url: "https://example.com",
       },
       {
         type: "github",
-        label: t("project.list.1.links.1.label"),
+        label: $t("project.list.1.links.1.label"),
         url: "https://github.com/example",
       },
     ],
   },
   {
     id: 2,
-    title: t("project.list.2.title"),
-    description: t("project.list.3.description"),
+    title: $t("project.list.2.title"),
+    description: $t("project.list.3.description"),
     image:
       "https://img.freepik.com/free-photo/online-shopping-concept_23-2151896814.jpg?ga=GA1.1.2043908255.1756389541&semt=ais_hybrid&w=740&q=80",
     technologies: ["React", "Firebase", "Material-UI"],
     links: [
       {
         type: "demo",
-        label: t("project.list.2.links.0.label"),
+        label: $t("project.list.2.links.0.label"),
         url: "https://example.com",
       },
     ],
   },
   {
     id: 3,
-    title: t("project.list.3.title"),
-    description: t("project.list.2.description"),
+    title: $t("project.list.3.title"),
+    description: $t("project.list.2.description"),
     image:
       "https://img.freepik.com/free-vector/infographic_53876-25853.jpg?ga=GA1.1.2043908255.1756389541&semt=ais_hybrid&w=740&q=80",
     technologies: ["JavaScript", "Chart.js", "OpenWeather API"],
     links: [
       {
         type: "demo",
-        label: t("project.list.3.links.0.label"),
+        label: $t("project.list.3.links.0.label"),
         url: "https://example.com",
       },
       {
         type: "github",
-        label: t("project.list.3.links.1.label"),
+        label: $t("project.list.3.links.1.label"),
         url: "https://github.com/example",
       },
     ],
