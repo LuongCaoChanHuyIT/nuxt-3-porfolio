@@ -1,0 +1,118 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "Resume",
+    "projects": "Projects",
+    "contact": "Contact",
+    "namePorfolio": "Porfolio Lucian"
+  },
+  "message": {
+    "welcome": "Welcome to my website!"
+  },
+  "about": {
+    "title": "About Me",
+    "contentTitle": "My name is Luong Cao Chan Huy and I help brands grow.",
+    "subcontent": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit dolorum itaque qui unde quisquam consequatur autem. Eveniet quasi nobis aliquid cumque officiis sed rem iure ipsa! Praesentium ratione atque dolorem?"
+  },
+  "contact": {
+    "title": "Get in touch",
+    "subtitle": "Let's work together!",
+    "name": "Full name",
+    "nameRequired": "A name is required.",
+    "email": "Email address",
+    "emailRequired": "An email is required.",
+    "emailInvalid": "Email is not valid.",
+    "message": "Message",
+    "messageRequired": "A message is required.",
+    "success": {
+      "title": "Form submission successful!",
+      "text": "To activate this form, sign up at"
+    },
+    "error": "Error sending message!",
+    "submit": "Submit",
+    "sentSuccess": "Sent successfully!",
+    "sentFail": "Send failed."
+  },
+  "footer": {
+    "copyright": "Copyright © Your Website 2023",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "contact": "Contact"
+  },
+  "header": {
+    "badge": "Design · Development · Marketing",
+    "subtitle": "I can help your business to",
+    "title": "Get online and grow fast",
+    "resume": "Resume",
+    "projects": "Projects"
+  },
+  "project": {
+    "title": "Projects",
+    "empty": {
+      "heading": "No Projects Yet",
+      "description": "Check back soon for exciting new projects!"
+    },
+    "loading": {
+      "message": "Loading projects..."
+    }
+  },
+  "resume": {
+    "title": "Resume",
+    "downloadButton": "Download Resume",
+    "sections": {
+      "experience": "Experience",
+      "education": "Education",
+      "professionalSkills": "Professional Skills",
+      "languages": "Languages"
+    },
+    "experiences": [
+      {
+        "period": "2019 - Present",
+        "position": "Web Developer",
+        "company": "Stark Industries",
+        "location": "Los Angeles, CA",
+        "description": "Developed and maintained responsive web applications using modern JavaScript frameworks. Led frontend development for multiple high-traffic projects, collaborating with cross-functional teams to deliver exceptional user experiences."
+      },
+      {
+        "period": "2017 - 2019",
+        "position": "SEM Specialist",
+        "company": "Wayne Enterprises",
+        "location": "Gotham City, NY",
+        "description": "Managed search engine marketing campaigns with budgets exceeding $500K. Optimized ad performance across Google Ads and Bing Ads, achieving 40% improvement in ROI and 25% increase in conversion rates."
+      }
+    ],
+    "educations": [
+      {
+        "period": "2015 - 2017",
+        "institution": "Barnett College",
+        "location": "Fairfield, NY",
+        "degree": "Master's Degree",
+        "field": "Web Development",
+        "description": "Focused on advanced web technologies including React, Node.js, and cloud computing. Completed capstone project on e-commerce platform optimization resulting in 30% performance improvement."
+      },
+      {
+        "period": "2011 - 2015",
+        "institution": "University of Los Angeles",
+        "location": "Los Angeles, CA",
+        "degree": "Bachelor's Degree",
+        "field": "Computer Science",
+        "description": "Comprehensive study in computer science fundamentals including algorithms, data structures, and software engineering. Graduated Magna Cum Laude with GPA 3.8/4.0."
+      }
+    ],
+    "skills": {
+      "professional": [
+        "SEO/SEM Marketing",
+        "Statistical Analysis",
+        "Web Development",
+        "Network Security",
+        "Adobe Software Suite",
+        "User Interface Design"
+      ],
+      "programming": ["HTML", "CSS", "JavaScript", "Python", "Ruby", "Node.js"]
+    }
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "navbar": {
+    "home": "Trang chủ",
+    "about": "Sơ yếu lý lịch",
+    "projects": "Dự án",
+    "contact": "Liên hệ",
+    "namePorfolio": "Porfolio Lucian"
+  },
+  "message": {
+    "welcome": "Chào mừng bạn đến với website của tôi!"
+  },
+  "about": {
+    "title": "Về tôi",
+    "contentTitle": "Tôi là Lương Cao Chấn Huy và tôi giúp thương hiệu phát triển.",
+    "subcontent": "Sai sót lớn lao khiến ai đó phải gánh chịu, nhưng cũng có người lại đạt được thành quả. Đôi khi chúng ta gặp phải điều gì đó giống như nghĩa vụ, nhưng lại bị buộc phải chấp nhận theo luật lệ riêng! Luôn hiện hữu lý do và trách nhiệm đi kèm với công việc?"
+  },
+  "contact": {
+    "title": "Liên hệ",
+    "subtitle": "Hãy cùng làm việc với nhau!",
+    "name": "Họ và tên",
+    "nameRequired": "Vui lòng nhập họ tên.",
+    "email": "Địa chỉ email",
+    "emailRequired": "Vui lòng nhập email.",
+    "emailInvalid": "Email không hợp lệ.",
+    "message": "Tin nhắn",
+    "messageRequired": "Vui lòng nhập tin nhắn.",
+    "success": {
+      "title": "Gửi biểu mẫu thành công!",
+      "text": "Để kích hoạt biểu mẫu này, hãy đăng ký tại"
+    },
+    "error": "Lỗi khi gửi tin nhắn!",
+    "submit": "Gửi",
+    "sentSuccess": "Gửi thành công!",
+    "sentFail": "Gửi thất bại."
+  },
+  "footer": {
+    "copyright": "Bản quyền © Website của bạn 2023",
+    "privacy": "Chính sách bảo mật",
+    "terms": "Điều khoản",
+    "contact": "Liên hệ"
+  },
+  "header": {
+    "badge": "Thiết kế · Phát triển · Marketing",
+    "subtitle": "Tôi có thể giúp doanh nghiệp của bạn",
+    "title": "Trực tuyến và phát triển nhanh chóng",
+    "resume": "Sơ yếu lý lịch",
+    "projects": "Dự án"
+  },
+  "project": {
+    "title": "Dự án",
+    "empty": {
+      "heading": "Chưa có dự án",
+      "description": "Hãy quay lại sau để xem những dự án thú vị mới!"
+    },
+    "loading": {
+      "message": "Đang tải dự án..."
+    }
+  },
+  "resume": {
+    "title": "Sơ yếu lý lịch",
+    "downloadButton": "Tải xuống CV",
+    "sections": {
+      "experience": "Kinh nghiệm",
+      "education": "Học vấn",
+      "professionalSkills": "Kỹ năng chuyên môn",
+      "languages": "Ngôn ngữ"
+    },
+    "experiences": [
+      {
+        "period": "2019 - Hiện tại",
+        "position": "Lập trình viên Web",
+        "company": "Stark Industries",
+        "location": "Los Angeles, CA",
+        "description": "Phát triển và duy trì các ứng dụng web responsive bằng những framework JavaScript hiện đại. Dẫn dắt phát triển frontend cho nhiều dự án có lượng truy cập cao, phối hợp với các nhóm đa chức năng để mang lại trải nghiệm người dùng xuất sắc."
+      },
+      {
+        "period": "2017 - 2019",
+        "position": "Chuyên viên SEM",
+        "company": "Wayne Enterprises",
+        "location": "Gotham City, NY",
+        "description": "Quản lý các chiến dịch tiếp thị trên công cụ tìm kiếm với ngân sách hơn $500K. Tối ưu hóa hiệu suất quảng cáo trên Google Ads và Bing Ads, đạt được 40% cải thiện ROI và tăng 25% tỷ lệ chuyển đổi."
+      }
+    ],
+    "educations": [
+      {
+        "period": "2015 - 2017",
+        "institution": "Barnett College",
+        "location": "Fairfield, NY",
+        "degree": "Thạc sĩ",
+        "field": "Phát triển Web",
+        "description": "Tập trung vào các công nghệ web nâng cao bao gồm React, Node.js và điện toán đám mây. Hoàn thành dự án tốt nghiệp về tối ưu hóa nền tảng thương mại điện tử, cải thiện hiệu suất 30%."
+      },
+      {
+        "period": "2011 - 2015",
+        "institution": "Đại học Los Angeles",
+        "location": "Los Angeles, CA",
+        "degree": "Cử nhân",
+        "field": "Khoa học máy tính",
+        "description": "Nghiên cứu toàn diện về nền tảng khoa học máy tính bao gồm thuật toán, cấu trúc dữ liệu và kỹ thuật phần mềm. Tốt nghiệp loại xuất sắc với GPA 3.8/4.0."
+      }
+    ],
+    "skills": {
+      "professional": [
+        "Tiếp thị SEO/SEM",
+        "Phân tích thống kê",
+        "Phát triển Web",
+        "An ninh mạng",
+        "Bộ công cụ Adobe",
+        "Thiết kế giao diện người dùng"
+      ],
+      "programming": ["HTML", "CSS", "JavaScript", "Python", "Ruby", "Node.js"]
+    }
+  },
+  "theme": {
+    "light": "Sáng",
+    "dark": "Tối"
+  }
+}
