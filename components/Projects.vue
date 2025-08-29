@@ -6,7 +6,7 @@
         <div class="text-center mb-5">
           <h1 class="display-5 fw-bolder mb-0">
             <span class="text-gradient d-inline">
-              {{ t('project.title') }}
+              {{ t("project.title") }}
             </span>
           </h1>
         </div>
@@ -21,13 +21,16 @@
             />
 
             <!-- Empty state -->
-            <div v-if="projects.length === 0 && !loading" class="text-center py-5">
+            <div
+              v-if="projects.length === 0 && !loading"
+              class="text-center py-5"
+            >
               <div class="empty-state">
                 <h3 class="text-muted mb-3">
-                  {{ t('project.empty.heading') }}
+                  {{ t("project.empty.heading") }}
                 </h3>
                 <p class="text-muted">
-                  {{ t('project.empty.description') }}
+                  {{ t("project.empty.description") }}
                 </p>
               </div>
             </div>
@@ -38,7 +41,7 @@
                 <span class="visually-hidden">Loading...</span>
               </div>
               <p class="mt-3 text-muted">
-                {{ t('project.loading.message') }}
+                {{ t("project.loading.message") }}
               </p>
             </div>
           </div>
@@ -49,88 +52,107 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
-import ProjectCard from '@/components/ui/ProjectCard.vue'
-import { useI18n } from 'vue-i18n'
+import { ref, onMounted } from "vue";
+import ProjectCard from "@/components/ui/ProjectCard.vue";
+import { useI18n } from "vue-i18n";
 
 interface ProjectLink {
-  type: string
-  label: string
-  url: string
+  type: string;
+  label: string;
+  url: string;
 }
 
 interface Project {
-  id?: number
-  title: string
-  description: string
-  image?: string
-  technologies?: string[]
-  links?: ProjectLink[]
+  id?: number;
+  title: string;
+  description: string;
+  image?: string;
+  technologies?: string[];
+  links?: ProjectLink[];
 }
 
-const projects = ref<Project[]>([])
-const loading = ref(false)
-const { t } = useI18n()
+const projects = ref<Project[]>([]);
+const loading = ref(false);
+const { t } = useI18n();
 const sampleProjects: Project[] = [
   {
     id: 1,
-    title: 'E-commerce Platform',
-    description:
-      'A full-stack e-commerce solution built with modern web technologies. Features include user authentication, payment processing, inventory management, and responsive design for optimal user experience across all devices.',
+    title: t("project.list.1.title"),
+    description: t("project.list.1.description"),
     image:
-      'https://img.freepik.com/free-photo/vertical-banners-sales-promo_23-2150653391.jpg?ga=GA1.1.2043908255.1756389541&semt=ais_hybrid&w=740&q=80',
-    technologies: ['Vue.js', 'Node.js', 'MongoDB', 'Stripe'],
+      "https://img.freepik.com/free-photo/vertical-banners-sales-promo_23-2150653391.jpg?ga=GA1.1.2043908255.1756389541&semt=ais_hybrid&w=740&q=80",
+    technologies: ["Vue.js", "Node.js", "MongoDB", "Stripe"],
     links: [
-      { type: 'demo', label: 'Live Demo', url: 'https://example.com' },
-      { type: 'github', label: 'GitHub', url: 'https://github.com/example' },
+      {
+        type: "demo",
+        label: t("project.list.1.links.0.label"),
+        url: "https://example.com",
+      },
+      {
+        type: "github",
+        label: t("project.list.1.links.1.label"),
+        url: "https://github.com/example",
+      },
     ],
   },
   {
     id: 2,
-    title: 'Task Management App',
-    description:
-      'A collaborative task management application that helps teams organize projects, assign tasks, and track progress. Built with real-time updates and intuitive drag-and-drop functionality.',
+    title: t("project.list.2.title"),
+    description: t("project.list.3.description"),
     image:
-      'https://img.freepik.com/free-photo/online-shopping-concept_23-2151896814.jpg?ga=GA1.1.2043908255.1756389541&semt=ais_hybrid&w=740&q=80',
-    technologies: ['React', 'Firebase', 'Material-UI'],
-    links: [{ type: 'demo', label: 'Try It', url: 'https://example.com' }],
+      "https://img.freepik.com/free-photo/online-shopping-concept_23-2151896814.jpg?ga=GA1.1.2043908255.1756389541&semt=ais_hybrid&w=740&q=80",
+    technologies: ["React", "Firebase", "Material-UI"],
+    links: [
+      {
+        type: "demo",
+        label: t("project.list.2.links.0.label"),
+        url: "https://example.com",
+      },
+    ],
   },
   {
     id: 3,
-    title: 'Weather Dashboard',
-    description:
-      'An interactive weather dashboard that provides real-time weather information, forecasts, and historical data visualization. Features location-based services and customizable widgets.',
+    title: t("project.list.3.title"),
+    description: t("project.list.2.description"),
     image:
-      'https://img.freepik.com/free-vector/infographic_53876-25853.jpg?ga=GA1.1.2043908255.1756389541&semt=ais_hybrid&w=740&q=80',
-    technologies: ['JavaScript', 'Chart.js', 'OpenWeather API'],
+      "https://img.freepik.com/free-vector/infographic_53876-25853.jpg?ga=GA1.1.2043908255.1756389541&semt=ais_hybrid&w=740&q=80",
+    technologies: ["JavaScript", "Chart.js", "OpenWeather API"],
     links: [
-      { type: 'demo', label: 'View Demo', url: 'https://example.com' },
-      { type: 'github', label: 'Source Code', url: 'https://github.com/example' },
+      {
+        type: "demo",
+        label: t("project.list.3.links.0.label"),
+        url: "https://example.com",
+      },
+      {
+        type: "github",
+        label: t("project.list.3.links.1.label"),
+        url: "https://github.com/example",
+      },
     ],
   },
-]
+];
 
 const loadProjects = async () => {
-  loading.value = true
+  loading.value = true;
   try {
-    await new Promise((resolve) => setTimeout(resolve, 1000))
+    await new Promise((resolve) => setTimeout(resolve, 1000));
 
-    projects.value = sampleProjects
-    console.log('Projects loaded:', projects.value.length)
+    projects.value = sampleProjects;
+    console.log("Projects loaded:", projects.value.length);
   } catch (error) {
-    console.error('Error loading projects:', error)
+    console.error("Error loading projects:", error);
   } finally {
-    loading.value = false
+    loading.value = false;
   }
-}
+};
 
 onMounted(() => {
-  loadProjects()
-})
+  loadProjects();
+});
 
 defineExpose({
   loadProjects,
-})
+});
 </script>
 
 <style scoped>

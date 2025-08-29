@@ -1,5 +1,8 @@
 <template>
-  <div class="d-flex flex-column h-100">
+  <div
+    class="d-flex flex-column h-100"
+    :class="themeStore.isDark ? 'bg-black' : 'bg-white'"
+  >
     <main class="flex-shrink-0">
       <Navigation />
       <slot />

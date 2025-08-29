@@ -24,31 +24,31 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
             <li class="nav-item">
-              <router-link to="/" class="nav-link">{{
+              <NuxtLink to="/" class="nav-link">{{
                 $t("navbar.home")
-              }}</router-link>
+              }}</NuxtLink>
             </li>
             <li class="nav-item">
-              <router-link to="/resume" class="nav-link">{{
+              <NuxtLink to="/resume" class="nav-link">{{
                 $t("navbar.about")
-              }}</router-link>
+              }}</NuxtLink>
             </li>
             <li class="nav-item">
-              <router-link to="/projects" class="nav-link">{{
+              <NuxtLink to="/projects" class="nav-link">{{
                 $t("navbar.projects")
-              }}</router-link>
+              }}</NuxtLink>
             </li>
             <li class="nav-item">
-              <router-link to="/contact" class="nav-link">{{
+              <NuxtLink to="/contact" class="nav-link">{{
                 $t("navbar.contact")
-              }}</router-link>
+              }}</NuxtLink>
             </li>
           </ul>
           <button
             class="btn btn-outline-primary btn-sm ms-3"
-            @click="locale.value = locale.value === 'en' ? 'vi' : 'en'"
+            @click="toggleLanguage"
           >
-            {{ locale.value === "en" ? "VI" : "EN" }}
+            {{ locale === "en" ? "VI" : "EN" }}
           </button>
           <button
             class="btn btn-outline-primary btn-sm ms-3"
@@ -63,10 +63,13 @@
 </template>
 <script setup lang="ts">
 import { useThemeStore } from "@/stores/theme";
-const { locale } = useI18n();
 const theme = useThemeStore();
+const { locale, setLocale } = useI18n();
 
-console.log(locale, "asdfasdf");
+const toggleLanguage = async () => {
+  const newLocale = locale.value === "en" ? "vi" : "en";
+  await setLocale(newLocale);
+};
 </script>
 
 <style lang=""></style>

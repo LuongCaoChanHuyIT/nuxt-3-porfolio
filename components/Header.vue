@@ -22,14 +22,14 @@
               <div
                 class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3"
               >
-                <router-link
+                <NuxtLink
                   class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder"
                   to="/resume"
                 >
                   {{ $t("header.resume") }}
-                </router-link>
+                </NuxtLink>
 
-                <router-link
+                <NuxtLink
                   class="btn btn-lg px-5 py-3 fs-6 fw-bolder"
                   :class="
                     theme.isDark ? 'btn-outline-light' : 'btn-outline-dark'
@@ -37,7 +37,7 @@
                   to="/projects"
                 >
                   {{ $t("header.projects") }}
-                </router-link>
+                </NuxtLink>
               </div>
             </div>
           </div>
